@@ -29,3 +29,21 @@ const breaks=(gifts, people, holiday)=>{
 }
 const christmas= breaks(11, 'friends', 'christmas')
 christmas.letsGo()
+
+const sendingAMessageInBits=(message1, message2, message3, message4)=>{
+    return{
+    message1,
+    message2,
+    message3,
+    message4,
+
+    finalMessageSent(){
+        console.log(`${message1}, ${message2}. ${message3}, ${message4}`)
+    }
+
+}
+}
+
+const sender = sendingAMessageInBits('hello there', 'my name is patrick','I need to find someone','can you help?')
+sender.finalMessageSent()
+
